@@ -38,6 +38,7 @@ public class SlideFragment extends ParallaxFragment {
     private TextView titleTextView;
     private TextView descriptionTextView;
     private ImageView imageView;
+    public boolean canMoveFurther =true;
 
     public static SlideFragment createInstance(SlideFragmentBuilder builder) {
         SlideFragment slideFragment = new SlideFragment();
@@ -104,7 +105,7 @@ public class SlideFragment extends ParallaxFragment {
     }
 
     public boolean canMoveFurther() {
-        return true;
+        return canMoveFurther;
     }
 
     public String cantMoveFurtherErrorMessage() {
